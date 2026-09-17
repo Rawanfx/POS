@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="POS.API/POS.API.csproj" />
+  <Project Path="POS.Application/POS.Application.csproj" Id="2350fa3f-4bfa-4818-838e-21bd7389e325" />
+  <Project Path="POS.Domain/POS.Domain.csproj" Id="e9f2f104-cf30-436b-9c2b-6b6483891bef" />
+  <Project Path="POS.Infrastrucure/POS.Infrastrucure.csproj" Id="938d0b4c-cbd9-4e8e-9479-e1babbbcecb2" />
+</Solution>
