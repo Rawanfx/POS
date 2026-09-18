@@ -4,7 +4,6 @@ namespace POS.Domain.Entities
 {
     public class PurchaseItems
     {
-        public Guid Id { get; set; }
         [ForeignKey(nameof(Purchase))]
         public Guid PurchaseId { get; set; }
         public Purchase Purchase { get; set; } = new Purchase();
