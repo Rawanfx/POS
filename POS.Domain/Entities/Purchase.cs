@@ -16,6 +16,9 @@ namespace POS.Domain.Entities
         [ForeignKey(nameof(ApplicationUser))]
         public Guid UserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal TotalPaid { get; set; }
+        public decimal Discount { get; set; }
     }
 
 }
