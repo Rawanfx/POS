@@ -11,7 +11,7 @@ namespace POS.Domain.Entities
         public Guid ToBranch { get; set; }
         public DateTime Date { get; set; }
         [ForeignKey(nameof(ApplicationUser))]
-        public Guid CreatedByUserId { get; set; }
+        public string CreatedByUserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
         public Branch fromBranch { get; set; }
         public Branch toBranch { get; set; }

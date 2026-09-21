@@ -7,7 +7,7 @@ namespace POS.Domain.Entities
         public Guid Id { get; set; }
         public DateTime CreatedAt { get; set; }
         [ForeignKey(nameof(ApplicationUser))]
-        public Guid UserId { get; set; }
+        public string UserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
         public Guid BranchId { get; set; }
         public Branch Branch { get; set; }

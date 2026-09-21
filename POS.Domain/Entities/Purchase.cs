@@ -14,7 +14,7 @@ namespace POS.Domain.Entities
         public Guid BranchId { get; set; }
         public Branch Branch { get; set; }
         [ForeignKey(nameof(ApplicationUser))]
-        public Guid UserId { get; set; }
+        public string UserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
         public decimal TotalPrice { get; set; }
         public decimal TotalPaid { get; set; }
