@@ -11,6 +11,7 @@ namespace POS.Domain.Entities
         public Guid SalesId { get; set; }
         public Sale Sale { get; set; } = new Sale();
         public decimal UnitPrice { get; set; }
+        public decimal DiscountPercentage { get; set; }
         public int Quantity { get; set; }
     }
 }
