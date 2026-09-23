@@ -1,4 +1,4 @@
-﻿using POS.Application.Common;
+﻿using POS.Application.Common.Exception;
 
 namespace POS.API.Middleware
 {

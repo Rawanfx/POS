@@ -2,9 +2,6 @@
 using POS.Application.Common.Interface;
 using POS.Domain.Entities;
 using POS.Infrastrucure.Data;
-using System.Data;
-using System.Data.Common;
-
 namespace POS.Infrastrucure.ServiceImplementation
 {
     public class UnitOfWork : IUnitOfWork
@@ -19,6 +16,9 @@ namespace POS.Infrastrucure.ServiceImplementation
         public IGenericRepository<Sale> SaleRepository => new GenericRepository<Sale>(context);
 
         public IGenericRepository<SaleItems> SaleItemsRepository => new GenericRepository<SaleItems>(context);
+
+        public IGenericRepository<Inventory> InventoryRepository => new GenericRepository<Inventory>(context);
+        public IGenericRepository<Product> ProductRepository => new GenericRepository<Product>(context);
 
         public async Task BeginTransactionAsync() =>
           DbTransaction=  await context.Database.BeginTransactionAsync();

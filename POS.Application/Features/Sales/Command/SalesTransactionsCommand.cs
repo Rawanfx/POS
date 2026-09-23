@@ -3,7 +3,7 @@ using POS.Application.Common.Models;
 
 namespace POS.Application.Features.Sales.Command;
 
-public record SalesTransactionsCommand(List<SalesTransactionItemsCommand> Items, Guid BranshId) : IRequest<Response<SalesTransactionResponse>>;
+public record SalesTransactionsCommand(List<SalesTransactionItemsCommand> Items, Guid BranshId,decimal DiscountOnTotal=0) : IRequest<Response<SalesTransactionResponse>>;
 
 public class SalesTransactionItemsCommand
 {

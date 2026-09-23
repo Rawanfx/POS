@@ -10,5 +10,7 @@ namespace POS.Application.Common.Interface
         Task SaveChangeAsync();
         public IGenericRepository<Sale> SaleRepository { get; }
         public IGenericRepository<SaleItems> SaleItemsRepository { get; }
+        public IGenericRepository<Inventory>InventoryRepository { get; }
+        public IGenericRepository<Product>ProductRepository { get; }
     }
 }

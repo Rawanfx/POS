@@ -1,4 +1,4 @@
-﻿namespace POS.Application.Common
+﻿namespace POS.Application.Common.Exception
 {
     public class UnAuthorized:Exception
     {
